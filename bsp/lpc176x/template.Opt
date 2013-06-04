@@ -1,0 +1,33 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (RT-Thread LPC17xx), 0x0004 // Tools: 'ARM-ADS'
+
+
+
+TARGOPT 1, (RT-Thread LPC17xx)
+ ADSCLK=12000000
+  OPTTT 0,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\obj\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 0,0,1
+  OPTAX 0
+  OPTDL (SARMCM3.DLL)(-MPU)(DARMP1.DLL)(-pLPC1768)(SARMCM3.DLL)(-MPU)(TARMP1.DLL)(-pLPC1768)
+  OPTDBG 48126,7,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+
