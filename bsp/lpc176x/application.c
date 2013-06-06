@@ -38,15 +38,27 @@
 #endif
 
 #include"led.h"
+#include"GLCD.H"
 
 static rt_thread_t led_thread;
 
 void rt_led_thread_entry(void *parameter)
 {
-    rt_hw_led_init();
+   unsigned char ch=0x20;
+   // rt_hw_led_init();
+    GLCD_Init();
+    GLCD_Clear(White);
+    GLCD_SetTextColor(White);
+    GLCD_SetBackColor(Blue);
+ 
+            
     while(1)
     {
-        rt_hw_led(0x55);
+           GLCD_DisplayChar(1,1,ch++);
+           rt_thread_delay(20);
+           if(ch> 'z')
+            ch = 0x20;
+      
     }
 }
 /* thread phase init */

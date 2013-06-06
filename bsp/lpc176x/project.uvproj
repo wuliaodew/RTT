@@ -406,11 +406,6 @@
               <FilePath>.\uart.c</FilePath>
             </File>
             <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\led.c</FilePath>
-            </File>
-            <File>
               <FileName>emac.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\emac.c</FilePath>
@@ -779,6 +774,26 @@
               <FileName>startup_LPC17xx.s</FileName>
               <FileType>2</FileType>
               <FilePath>CMSIS\CM3\DeviceSupport\NXP\LPC17xx\startup\arm\startup_LPC17xx.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>BSP</GroupName>
+          <Files>
+            <File>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>GLCD_LPC1700.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GLCD_LPC1700.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcd_flash.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\lcd_flash.c</FilePath>
             </File>
           </Files>
         </Group>
